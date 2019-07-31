@@ -1,4 +1,4 @@
-<center> <h1>Analysis of a concrete-slum-measurements dataset</h1> </center>
+<center> <h1>Analysis of a concrete-slump-measurements dataset</h1> </center>
 
 **Author:** Leonardo Espin.
 
