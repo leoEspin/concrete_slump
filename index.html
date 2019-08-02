@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Concrete Slump</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Concrete slump</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11786,7 +11786,46 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Analysis-of-the-Concrete-Slump-Test-data-set">Analysis of the Concrete Slump Test data set<a class="anchor-link" href="#Analysis-of-the-Concrete-Slump-Test-data-set">&#182;</a></h2><p><strong>Author:</strong> Leonardo Espin</p>
+<h2 id="Analysis-of-a-Concrete-Slump-Test-data-set">Analysis of a Concrete-Slump Test data set<a class="anchor-link" href="#Analysis-of-a-Concrete-Slump-Test-data-set">&#182;</a></h2><p>Concrete slump measurements are used to <a href="https://en.wikipedia.org/wiki/Concrete_slump_test">determine concrete properties</a> before it sets. In this analysis, I use measurements of properties of a concrete mixture, such as water and cement content,  to predict the concrete's compressive strength. <a href="https://leoespin.github.io/concrete_slump/">I test two types of models for making predictions</a>, a decision-tree regression model and a random-forest model.</p>
+<p>There are 7 input variables, and 3 output variables in the data set:</p>
+<table>
+<thead><tr>
+<th>Input variables (kg per M^3)</th>
+<th>Output variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cement</td>
+<td>SLUMP (cm)</td>
+</tr>
+<tr>
+<td>Slag</td>
+<td>FLOW (cm)</td>
+</tr>
+<tr>
+<td>Fly ash</td>
+<td>28-day Compressive Strength (Mpa) </td>
+</tr>
+<tr>
+<td>Water</td>
+<td></td>
+</tr>
+<tr>
+<td>SP</td>
+<td></td>
+</tr>
+<tr>
+<td>Coarse Aggr.</td>
+<td></td>
+</tr>
+<tr>
+<td>Fine Aggr.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Author:</strong> Leonardo Espin</p>
 <p><strong>Date:</strong> July 3, 2019</p>
 <ul>
 <li>First I will load all the libraries I will use for the exploratory data analysis</li>
